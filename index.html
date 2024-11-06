@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="http://filemerge.pages.dev/" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="google-site-verification" content="UM7NoVkmCmkfjn_tf88CQk6c9Rf7phrwocZtMWdbF2M" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Combine your HTML, CSS and JS files into 1 HTML file online with our merge tool, so that you can have all your files conveniantly in one! Simply upload your files and our tool will combine them into one HTML file!">
+    <title>Combine HTML CSS & JS files into 1 HTML file online free!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="merge icon.png">
+</head>
+<body>
+    <header><h1>File Combine Tool</h1></header>
+    <div class="container">
+        <div class="header">
+            <p class="add_file_tag">Click to add files, or drag into the page to upload →</p><button onclick="addFile()" class="icon-button" title="Add File">+</button>
+            <button onclick="mergeFiles()" class="merge-button">Merge Files</button>
+        </div>
+
+        <h1>File Merger</h1>
+        
+        <div id="file-inputs" class="file-input-container">
+            <!-- File inputs are added dynamically here -->
+        </div>
+
+        <textarea id="output" placeholder="Merged output will appear here..."></textarea>
+    </div>
+    <div id="tool-description" style="width: 900px; display: block; margin: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+        <h2>How to Use the File Merger Tool</h2>
+        <p>
+            This tool allows you to easily create, manage, and merge multiple files (HTML, CSS, and JavaScript) into one cohesive document. Here’s how it works:
+        </p>
+        <ul>
+            <li>Click the <strong>+</strong> button at the top to add a new file. Each file can have a name and content.</li>
+            <li>To remove a file, use the <strong>Delete</strong> button next to each entry.</li>
+            <li>Once you have your files ready, click <strong>Merge Files</strong> to generate a combined file.</li>
+        </ul>
+        <h3>Benefits:</h3>
+        <ul>
+            <li>Streamlined file management – add, edit, and delete files with ease.</li>
+            <li>Quickly merge multiple files for testing or deployment.</li>
+            <li>Instant preview of merged content with styling and functionality intact.</li>
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

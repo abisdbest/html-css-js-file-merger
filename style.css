@@ -1,0 +1,207 @@
+/* Global Styling */
+* {
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Main container */
+.container {
+    margin: 50px;
+    margin-top: 120px;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header with action buttons */
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Icon button styling */
+.icon-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Smooth transition for container height */
+.file-input-container {
+    transition: height 0.4s ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* File input fade-in and positioning transition */
+.file-input {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease, margin 0.4s ease;
+    margin-bottom: 10px;
+}
+
+/* Initial appearance effect for new files */
+.new-file {
+    opacity: 0;
+    transform: scale(0.95);
+    margin-top: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, margin 0.4s ease;
+}
+
+/* Fade-out effect for deleted file */
+.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+    margin-top: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, margin 0.4s ease;
+}
+
+.icon-button:hover {
+    background-color: #218838;
+}
+
+/* Merge button styling */
+.merge-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.merge-button:hover {
+    background-color: #0069d9;
+}
+
+/* Page title */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* File input container styling */
+.file-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styling individual file input sections */
+.file-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 45%;
+}
+
+/* Delete file button */
+.delete-file-button {
+    padding: 8px 12px;
+    color: white;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.delete-file-button:hover {
+    background-color: #e60000;
+}
+
+/* Styled output textarea */
+#output {
+    width: 100%;
+    height: 180px; /* Make this dynamic if needed */
+    min-height: 50px;
+    padding: 12px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical;
+    background-color: #f0f7ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add some spacing above */
+    transition: margin-top 0.4s ease; /* Smooth margin transition */
+}
+header {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 20px);
+    height: 80px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.347);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border-radius: 50px;
+    margin: 10px;
+}
+header > h1 {
+    font-size: 40px;
+    margin: 17px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 8px rgba(0, 0, 0, 0.53);
+}
+.add_file_tag {
+    position: absolute;
+    left: calc(50% - 310px);
+    margin-top: 4px;
+    /* top: calc(50% - 200px); */
+    width: 200px;
+    color: rgb(147, 147, 147);
+    font-size: 17px;
+    height: auto;
+}
